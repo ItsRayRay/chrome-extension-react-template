@@ -1,10 +1,15 @@
 {
     "manifest_version": 3,
-    "name": "React Chrome Extension",
+    "name": "Heatmap v2 Chrome Extension",
     "version": "1.0.0",
-    "description": "A simple React app as a Chrome extension",
+    "description": "A Chrome extension with Supabase authentication for heatmap functionality",
     "action": {
       "default_popup": "index.html"
     },
-    "permissions": []
+    "permissions": [
+      "storage"
+    ],
+    "host_permissions": [
+      "https://*.supabase.co/*"
+    ]
   }
